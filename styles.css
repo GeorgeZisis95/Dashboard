@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('fonts/Poppins-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PoppinsRegular', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "sidebar navbar"
+        "sidebar main";
+}
+
+nav {
+    grid-area: navbar;
+}
+
+
+aside {
+    width: 270px;
+    position: fixed;
+    margin: 16px;
+    border-radius: 16px;
+    height: calc(100vh - 32px);
+    grid-area: sidebar;
+    background: rgb(55, 147, 239);
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+.sidebar-header .header-logo {
+    background-color: black;
+}
+
+.sidebar-header .header-logo img {
+    background-color: red;
+    height: 46px;
+    width: 46px;
+    display: block;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.sidebar-nav .nav-list {
+    list-style: none;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(126, 126, 202);
+}
