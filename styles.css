@@ -7,18 +7,23 @@
     font-family: "Roboto", sans-serif;
 }
 
-body {
+aside {
+    height: 100vh;
+    padding: 10px;
+    width: 250px;
     background-color: rgb(4, 188, 249);
 }
 
 .side-title {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .side-title .icon {
     width: 50px;
     height: 50px;
+    margin-right: 10px;
     filter: invert(98%) sepia(54%) saturate(0%) hue-rotate(323deg) brightness(108%) contrast(101%);
 }
 
@@ -26,4 +31,58 @@ body {
     color: #fff;
     font-size: 24px;
     font-weight: bold;
+}
+
+.side-main {
+    margin-bottom: 20px;
+}
+
+.side-main .item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.side-main .item:hover {
+    background-color: black;
+}
+
+.side-main .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+    filter: invert(98%) sepia(54%) saturate(0%) hue-rotate(323deg) brightness(108%) contrast(101%);
+}
+
+.side-main .text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.side-footer .item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.side-footer .item:hover {
+    background-color: black;
+}
+
+.side-footer .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+    filter: invert(98%) sepia(54%) saturate(0%) hue-rotate(323deg) brightness(108%) contrast(101%);
+}
+
+.side-footer .text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
 }
