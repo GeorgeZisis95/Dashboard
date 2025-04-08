@@ -7,7 +7,14 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    display: grid;
+    grid-template-areas: "sidebar navbar" "sidebar main";
+    grid-template-columns: 0.5fr 3fr;
+}
+
 aside {
+    grid-area: sidebar;
     height: 100vh;
     padding: 10px;
     width: 250px;
@@ -85,4 +92,66 @@ aside {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+nav .second-line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.second-line .greet {
+    display: flex;
+    align-items: center;
+    margin-right: 30%;
+}
+
+.second-line .greet .cat-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.second-line .greet .text {
+    padding: 10px;
+}
+
+.second-line .greet .text .one {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.second-line .greet .text .two {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.second-line .list-item {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(4, 188, 249);
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+main {
+    background-color: rgb(225, 225, 229);
+    grid-area: main;
 }
