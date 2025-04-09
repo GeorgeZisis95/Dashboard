@@ -326,6 +326,34 @@ main .trending {
 
 main .trending-box {
     height: 300px;
-    width: 250px;
+    width: 270px;
     background-color: #fff;
+    padding: 15px 30px 30px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main .trending-box img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+main .trending-box .animal {
+    display: flex;
+    align-items: center;
+}
+
+main .trending-box .text {
+    padding: 15px;
+}
+
+main .trending-box .text .one {
+    font-size: 14px;
+}
+
+main .trending-box .text .two {
+    font-size: 14px;
+    color: #6f6f6f;
 }
