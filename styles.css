@@ -199,14 +199,31 @@ nav {
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
 main {
     background-color: rgb(225, 225, 229);
     grid-area: main;
+}
+
+main .project-box {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 200px;
+    width: 350px;
+    background-color: #fff;
+    padding: 30px 10px 20px 20px;
+    border-left: 5px solid rgb(255, 196, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main .project-box .images {
+    justify-self: end;
+    align-self: end;
+}
+
+main .project-box .images img {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
 }
