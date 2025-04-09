@@ -202,9 +202,12 @@ nav {
 main {
     background-color: rgb(225, 225, 229);
     grid-area: main;
+    display: grid;
+    grid-template-areas: "projects anncs" "projects trends";
 }
 
 main .projects {
+    grid-area: projects;
     display: grid;
     grid-template-areas:
         "header header"
@@ -245,8 +248,8 @@ main .projects .project-title {
 
 main .title {
     color: rgb(29, 29, 29);
-    font-size: 22px;
-    font-weight: 900px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 main .project-box {
@@ -278,10 +281,47 @@ main .project-box p {
     color: #6f6f6f;
 }
 
+main .announcements {
+    grid-area: anncs;
+    padding: 20px;
+}
+
 main .ann-box {
-    height: 300px;
-    width: 250px;
+    height: 320px;
+    width: 270px;
     background-color: #fff;
+    padding: 15px 30px 30px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main .ann-box .box {
+    border-bottom: 2px solid #c4c3c3;
+}
+
+main .ann-box .box-three {
+    border-bottom: none;
+}
+
+main .ann-box p {
+    padding: 5px 0 10px 0;
+}
+
+main .ann-box h6 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+main .ann-box p {
+    font-size: 12px;
+    color: #6f6f6f;
+}
+
+main .trending {
+    grid-area: trends;
+    padding: 20px;
 }
 
 main .trending-box {
